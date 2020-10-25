@@ -8,7 +8,6 @@ registerApplication({
   app: () =>
     System.import("@thiethaa/nav-bar"),
   activeWhen: ['/'],
-  // domElement: document.getElementById('nav-container')
 });
 
 registerApplication({
@@ -16,7 +15,6 @@ registerApplication({
   app: () =>
     System.import("@thiethaa/page-one"),
   activeWhen: (location) => location.pathname === '/page-one',
-  // domElement: document.getElementById('page-1-container')
 });
 
 registerApplication({
@@ -24,7 +22,13 @@ registerApplication({
   app: () =>
     System.import("@thiethaa/page-two"),
   activeWhen: (location) => location.pathname === '/page-two',
-  // domElement: document.getElementById('page-2-container')
+});
+
+registerApplication({
+  name: "@thiethaa/page-three",
+  app: () =>
+    System.import("@thiethaa/page-three"),
+  activeWhen: (location) => location.pathname === '/page-three',
 });
 
 start({

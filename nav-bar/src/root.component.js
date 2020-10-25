@@ -19,6 +19,10 @@ export default function Root() {
     className = "link" >
     Page 2 <
     /Link> <
+    Link to = "/page-three"
+    className = "link" >
+    Page 3 <
+    /Link> <
     /nav> <
     /BrowserRouter>
   );
