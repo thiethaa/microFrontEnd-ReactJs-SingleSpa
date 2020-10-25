@@ -1,11 +1,12 @@
 # microFrontEnd-ReactJs-SingleSpa
 build micro frontEnd ReactJs App using Single-Spa
 
-This App contain 4 Applications:
+This App contain 5 Applications:
 1. container-app
 2. nav-bar-app
 3. app-page-one
 4. app-page-two
+5. app-page-three
 
 stepBystep create microFrontEnd-React-app using single-spa:
 1. create Directory microFrontEnd-app
@@ -15,7 +16,7 @@ stepBystep create microFrontEnd-React-app using single-spa:
 2. create container app:
       select "single-spa root config "
       
-3. create 3 microFrontEnd apps:
+3. create 4 microFrontEnd apps:
       select "single-spa application/parcel"
 4. assemble all the app together, in the container app open index.ejs
 
@@ -36,7 +37,8 @@ stepBystep create microFrontEnd-React-app using single-spa:
                       "@thiethaa/root-config": "//localhost:9000/thiethaa-root-config.js",
                       "@thiethaa/nav-bar": "//localhost:9001/thiethaa-nav-bar.js",
                       "@thiethaa/page-one": "//localhost:9002/thiethaa-page-one.js",
-                      "@thiethaa/page-two": "//localhost:9003/thiethaa-page-two.js"
+                      "@thiethaa/page-two": "//localhost:9003/thiethaa-page-two.js",
+                      "@thiethaa/page-two": "//localhost:9004/thiethaa-page-three.js"
                     }
                   }
               </script>
@@ -56,4 +58,8 @@ stepBystep create microFrontEnd-React-app using single-spa:
    
     app-page-two:
               
-                npm start -- --port 9001
+                npm start -- --port 9003
+    
+   app-page-three:
+              
+                npm start -- --port 9004
